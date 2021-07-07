@@ -1,0 +1,12 @@
+.link {
+    min-width: 100px;
+}
+
+.active {
+    color: white;
+    background: #01c38d;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 600;
+}
