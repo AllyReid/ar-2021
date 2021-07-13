@@ -16,9 +16,9 @@ export default function Menu() {
             <Link href="/about">
                 <a className={setActiveLink('/about')}>About</a>
             </Link>
-            <Link href="/blog">
+            {/* <Link href="/blog">
                 <a className={setActiveLink('/blog')}>Blog</a>
-            </Link>
+            </Link> */}
             <Link href="/contact">
                 <a className={setActiveLink('/contact')}>Contact</a>
             </Link>

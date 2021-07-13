@@ -100,7 +100,7 @@ export default function About() {
                                         Get in touch
                                     </Button>
                                 </NextLink>
-                                <NextLink href="/blog">
+                                {/* <NextLink href="/blog">
                                     <Button
                                         variant="primary"
                                         colorScheme="teal"
@@ -108,7 +108,7 @@ export default function About() {
                                     >
                                         Read more
                                     </Button>
-                                </NextLink>
+                                </NextLink> */}
                             </HStack>
                         </motion.div>
                     </motion.div>
