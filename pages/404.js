@@ -31,7 +31,9 @@ export default function NotFound() {
                     background="white"
                     textAlign="center"
                 >
-                    <Heading size="lg">{pageHeading}</Heading>
+                    <Heading as="h1" size="lg">
+                        {pageHeading}
+                    </Heading>
                     <Text>
                         Looks like the page you are looking for doesn't exist
                     </Text>

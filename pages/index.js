@@ -45,7 +45,9 @@ export default function Home() {
                     boxShadow="lg"
                     background="white"
                 >
-                    <Heading size="lg">{pageTitle}</Heading>
+                    <Heading as="h1" size="lg">
+                        {pageTitle}
+                    </Heading>
                     <motion.div
                         initial="hidden"
                         variants={container}
@@ -53,7 +55,7 @@ export default function Home() {
                         animate={showText ? 'show' : 'hidden'}
                     >
                         <motion.div variants={item}>
-                            <Text variant="copy" fontSize="30px">
+                            <Text variant="copy" as="h2" fontSize="30px">
                                 I'm Ally Reid, a Senior Front End Software
                                 Engineer from Glasgow, Scotland.{' '}
                             </Text>

@@ -32,9 +32,11 @@ export default function Contact() {
                     boxShadow="lg"
                     background="white"
                 >
-                    <Heading size="lg">{pageHeading}</Heading>
+                    <Heading as="h1" size="lg">
+                        {pageHeading}
+                    </Heading>
                     <HStack spacing={5} my={10}>
-                        <Text>Let's connect:</Text>
+                        <Text as="h2">Let's connect:</Text>
                         <Box>
                             <Link
                                 title="Github"

@@ -45,14 +45,16 @@ export default function About() {
                     boxShadow="lg"
                     background="white"
                 >
-                    <Heading size="lg">{pageHeading}</Heading>
+                    <Heading as="h1" size="lg">
+                        {pageHeading}
+                    </Heading>
                     <motion.div
                         variants={container}
                         initial="hidden"
                         animate="show"
                     >
                         <motion.div variants={item}>
-                            <Text variant="copy">
+                            <Text as="h2" variant="copy">
                                 A self proclaimed technology addict with over a
                                 decades experience working within web and
                                 digital media.
