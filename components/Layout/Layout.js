@@ -1,12 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
-import NextLink from 'next/link';
 import { Box, Flex, HStack, useColorMode } from '@chakra-ui/react';
 import Menu from '@components/Menu';
 import Logo from '@components/Logo';
 
 const Layout = ({ children }) => {
     const { colorMode, toggleColorMode } = useColorMode();
+
     return (
         <Box className="container" style={{ minHeight: '100vh' }}>
             <Head>
@@ -43,6 +43,23 @@ const Layout = ({ children }) => {
                 />
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta name="theme-color" content="#ffffff" />
+                {/* Global Site Tag (gtag.js) - Google Analytics */}
+                <script
+                    async
+                    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+                />
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `
+                    }}
+                />
             </Head>
 
             <Box className="inner">
