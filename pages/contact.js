@@ -62,17 +62,7 @@ export default function Contact() {
                             </Link>
                         </Box>
                     </HStack>
-                    <Flex
-                        alignItems="center"
-                        background="green.100"
-                        p={2}
-                        borderRadius="md"
-                    >
-                        <EmojiTalkingHappy />
-                        <Text ml={2} fontWeight="bold">
-                            Currently open to discussing opportunities.
-                        </Text>
-                    </Flex>
+
                     <Divider mb={5} />
                     <ContactForm />
                 </Box>
